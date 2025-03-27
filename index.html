@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <header><h1>ReadSphere</h1></header>
+        <div class="search">
+            <input type="text" name="Searchbox" class="searchBox" placeholder="Search..">
+            <button class="searchBtn"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="sorting">
+            <select name="Sort" class="Sort">
+                <option value="default">--Select--</option>
+                <option value="title-asc">Alphabetical Order(A-Z)</option>
+                <option value="title-desc">Alphabetical Order(Z-A)</option>
+                <option value="date-new">Published Date (Newest First)</option>
+                <option value="date-old">Published Date (Oldest First)</option>
+            </select>
+            
+        </div>
+        
+        <div class="view">
+            <div class="grid"><i class="fa-solid fa-grip"></i>
+            </i></div>
+            <div class="list"><i class="fa-solid fa-list"></i></div>
+        </div>
+       
+    </nav>
+    
+    <main>
+        <div class="bookContainer"></div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
